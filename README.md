@@ -1,1 +1,1 @@
-"# get_verse" 
+Will return your verse for today, by counting from the day you were born as number 1. Each verse is unique for the first 85 years.
