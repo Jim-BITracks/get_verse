@@ -26,11 +26,13 @@ if verses_index > 31101:
 # load Pickle
 df = pd.read_pickle('data/verses.pkl')
 
-book_name = df.iloc[verses_index]['book_name'].lower()
-book_name = book_name.replace(' ', '_', 1)
+book_name_raw = df.iloc[verses_index]['book_name']
+book_name = book_name_raw.replace(' ', '_', 1).lower()
 chapter = df.iloc[verses_index]['chapter']
 verse = df.iloc[verses_index]['verse']
 
+st.subheader(f"Today's verse: {book_name_raw} {chapter}:{verse}")
+
 link_to_verse = f'https://biblehub.com/{book_name}/{chapter}-{verse}.htm'
 
-st.write(f"Read verse number: {bible_verse_number} (counting from Genesis 1:1) on [biblehub.com](%s)" % link_to_verse)
+st.write(f"Read this verse (number: {bible_verse_number} counting from Genesis 1:1) on [biblehub.com](%s)" % link_to_verse)
