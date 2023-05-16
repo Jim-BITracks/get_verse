@@ -1,4 +1,4 @@
-# streamlit run scripts/get_verse_streamlit.py
+# streamlit run get_verse_streamlit.py
 
 import streamlit as st
 import pandas as pd
@@ -24,7 +24,7 @@ if verses_index > 31101:
     bible_verse_number = verses_index + 1
 
 # load Pickle
-df = pd.read_pickle('scripts/data/verses.pkl')
+df = pd.read_pickle('data/verses.pkl')
 
 book_name = df.iloc[verses_index]['book_name'].lower()
 book_name = book_name.replace(' ', '_', 1)
