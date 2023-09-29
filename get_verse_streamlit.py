@@ -1,5 +1,10 @@
 # streamlit run get_verse_streamlit.py
 
+# pip install streamlit
+# pip install pandas
+
+# pip freeze > requirements.txt
+
 import streamlit as st
 import pandas as pd
 from datetime import date, timedelta
