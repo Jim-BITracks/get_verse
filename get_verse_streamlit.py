@@ -9,7 +9,9 @@ import streamlit as st
 import pandas as pd
 from datetime import date, timedelta
 
-st.title("Day of Life Verse (starting from birth)")
+st.title("Day of Life Verse")
+st.header("(starting from birth)")
+st.divider()
 today = date.today()
 #today = date(1980,2,7)
 min_date = today - timedelta(weeks=6000)
