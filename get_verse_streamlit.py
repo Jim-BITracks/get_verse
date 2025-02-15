@@ -5,6 +5,9 @@
 
 # pip freeze > requirements.txt
 
+# python --version
+# python -m pip install --upgrade pip
+
 import streamlit as st
 import pandas as pd
 from datetime import date, timedelta
